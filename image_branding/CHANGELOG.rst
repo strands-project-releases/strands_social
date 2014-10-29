@@ -2,6 +2,11 @@
 Changelog for package image_branding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.3 (2014-10-29)
+------------------
+* adding install targets
+* Contributors: Jaime Pulido Fentanes
+
 0.0.2 (2014-10-28)
 ------------------
 
