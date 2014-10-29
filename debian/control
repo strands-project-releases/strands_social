@@ -1,0 +1,12 @@
+Source: ros-hydro-strands-tweets
+Section: misc
+Priority: extra
+Maintainer: jaime <jaime@todo.todo>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-actionlib, ros-hydro-actionlib-msgs, ros-hydro-catkin, ros-hydro-message-generation, ros-hydro-roscpp, ros-hydro-rospy, ros-hydro-sensor-msgs, ros-hydro-std-msgs, ros-hydro-std-srvs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-hydro-strands-tweets
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-actionlib, ros-hydro-actionlib-msgs, ros-hydro-roscpp, ros-hydro-rospy, ros-hydro-sensor-msgs, ros-hydro-std-msgs, ros-hydro-std-srvs
+Description: The strands_tweets package
