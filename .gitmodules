@@ -1,0 +1,3 @@
+[submodule "strands_tweets/contrib/twython"]
+	path = strands_tweets/contrib/twython
+	url = git://github.com/ryanmcgrath/twython.git
