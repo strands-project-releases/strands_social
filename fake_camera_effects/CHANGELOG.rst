@@ -2,6 +2,9 @@
 Changelog for package fake_camera_effects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.4 (2014-10-30)
+------------------
+
 0.0.3 (2014-10-29)
 ------------------
 * Added install targets, proper dependencies and a launch file.
