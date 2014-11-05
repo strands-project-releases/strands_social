@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="sound_play" type="soundplay_node.py" name="soundplay_node" />
+  <node pkg="fake_camera_effects" type="fake_camera.py" name="camera_effects" />
+</launch> 
