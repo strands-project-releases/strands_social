@@ -2,6 +2,9 @@
 Changelog for package social_card_reader
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.6 (2014-11-06)
+------------------
+
 0.0.5 (2014-11-05)
 ------------------
 * Install targets added and redundant dependencies removed.
