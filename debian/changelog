@@ -1,0 +1,42 @@
+ros-indigo-strands-social (0.0.6-0trusty) trusty; urgency=high
+
+  * Added social_card_reader
+  * Created metapackage for easier install
+  * Contributors: Christian Dondrup
+  * Added social_card_reader
+  * Created metapackage for easier install
+  * Contributors: Christian Dondrup
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 06 Nov 2014 00:00:00 -0000
+
+ros-indigo-strands-social (0.0.5-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 05 Nov 2014 00:00:00 -0000
+
+ros-indigo-strands-social (0.0.4-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-indigo-strands-social (0.0.3-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-strands-social (0.0.2-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Tue, 28 Oct 2014 16:18:00 -0000
+
+ros-indigo-strands-social (0.0.1-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Tue, 28 Oct 2014 15:48:00 -0000
+
+
