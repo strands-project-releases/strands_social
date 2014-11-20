@@ -1,0 +1,11 @@
+#goal definition
+string text
+bool force
+bool with_photo
+sensor_msgs/Image photo
+---
+#result definition
+bool success
+---
+#feedback
+string tweet
