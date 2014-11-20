@@ -18,7 +18,7 @@ class brandingServer(object):
         self.cancelled = False
         self._action_name = name
         
-        
+        #self.brand_image_path = rospy.get_param("~brand_image_path",'/tmp/Tweeter_branding.png')
         rospy.loginfo("Creating action servers.")
         print self._action_name
         self._as = actionlib.SimpleActionServer(self._action_name, image_branding.msg.ImageBrandingAction, execute_cb = self.executeCallback, auto_start = False)
@@ -59,8 +59,20 @@ class brandingServer(object):
         #photo = open('/home/jaime/Linderva.png', 'rb')
         bridge = CvBridge()
         photo = bridge.imgmsg_to_cv2(goal.photo, "bgr8")
+        
+        #height, width, depth = photo.shape
+        #print height, width, depth
+        
         #cv2.imwrite('/tmp/temp_tweet.png', photo)
-        bgphoto = cv2.imread('/tmp/Tweeter_branding.png')
+        brand_image_path = rospy.get_param("~brand_image_path",'/tmp/Tweeter_branding.png')
+        #print "loading"
+        
+        bgphoto = cv2.imread(brand_image_path)
+        #print "Done"
+
+        #height, width, depth = bgphoto.shape
+        #print height, width, depth
+        
         dst = cv2.addWeighted(photo,1.0,bgphoto,0.7,0)
 
         bridge = CvBridge()
