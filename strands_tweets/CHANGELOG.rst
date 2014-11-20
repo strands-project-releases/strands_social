@@ -2,6 +2,12 @@
 Changelog for package strands_tweets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.7 (2014-11-20)
+------------------
+* Fixing description in package.xml
+* making brand image a parameter and fixing package.xml in strands_tweets
+* Contributors: Jaime Pulido Fentanes
+
 0.0.6 (2014-11-06)
 ------------------
 
