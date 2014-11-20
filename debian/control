@@ -1,0 +1,12 @@
+Source: ros-hydro-strands-social
+Section: misc
+Priority: extra
+Maintainer: Christian Dondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin
+Homepage: http://github.com/strands-project/strands_social
+Standards-Version: 3.9.2
+
+Package: ros-hydro-strands-social
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-datamatrix-read, ros-hydro-fake-camera-effects, ros-hydro-image-branding, ros-hydro-social-card-reader, ros-hydro-strands-tweets
+Description: The strands_social metapackage
