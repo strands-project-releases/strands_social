@@ -26,16 +26,16 @@ find_package(catkin REQUIRED COMPONENTS
 ## Declare ROS messages, services and actions ##
 ################################################
 
-add_message_files(
-  FILES
-  Tweet.msg
-)
+#add_message_files(
+#  FILES
+#  Tweet.msg
+#)
 
 ## Generate added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  sensor_msgs
-)
+#generate_messages(
+#  DEPENDENCIES
+#  sensor_msgs
+#)
 
 ###################################
 ## catkin specific configuration ##
