@@ -12,7 +12,7 @@ import actionlib
 
 import strands_tweets.msg
 import image_branding.msg
-import card_image_tweet.msg
+#import card_image_tweet.msg
 
 #import cv2
 from std_msgs.msg import String
@@ -36,7 +36,7 @@ class read_and_tweet(object):
         self.client.wait_for_server()
         self.brandclient.wait_for_server()
 
-        self.tw_pub = rospy.Publisher('/card_image_tweet/tweet', card_image_tweet.msg.Tweet)
+        #self.tw_pub = rospy.Publisher('/card_image_tweet/tweet', card_image_tweet.msg.Tweet)
 
         rospy.loginfo(" ... Init done")
 
@@ -63,18 +63,17 @@ class read_and_tweet(object):
             self.brandclient.wait_for_result()
             br_ph = self.brandclient.get_result()
     
-   
-    
+       
             tweetgoal.text = text
             tweetgoal.with_photo = True
             tweetgoal.photo = br_ph.branded_image
 
             self.client.send_goal(tweetgoal)
 
-            tweettext=card_image_tweet.msg.Tweet()
-            tweettext.text = text
-            tweettext.photo = br_ph.branded_image
-            self.tw_pub.publish(tweettext)
+            #tweettext=card_image_tweet.msg.Tweet()
+            #tweettext.text = text
+            #tweettext.photo = br_ph.branded_image
+            #self.tw_pub.publish(tweettext)
     
             self.client.wait_for_result()
             ps = self.client.get_result()
