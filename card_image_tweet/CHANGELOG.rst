@@ -2,6 +2,12 @@
 Changelog for package card_image_tweet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.10 (2014-11-21)
+-------------------
+* including support dir in install targets
+* adding tweet text file support
+* Contributors: Jaime Pulido Fentanes
+
 0.0.9 (2014-11-21)
 ------------------
 * publish topic with text image and depth everytime a tweet is made
