@@ -15,6 +15,11 @@ catkin_python_setup()
 ################################################
 
 
+add_message_files(
+  FILES
+  Tweeted.msg
+)
+
 ## Generate services in the 'srv' folder
  add_service_files(
    FILES
@@ -27,6 +32,7 @@ add_action_files(
    DIRECTORY action
    FILES 
    SendTweet.action
+   GrabImageThenTweet.action
 )
 
 ## Generate added messages and services with any dependencies listed here
@@ -63,3 +69,8 @@ install(DIRECTORY scripts/
         USE_SOURCE_PERMISSIONS)
 
 
+# Mark other files for installation (e.g. launch and bag files, etc.)
+install(
+  DIRECTORY launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
