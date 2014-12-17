@@ -1,0 +1,12 @@
+Source: ros-indigo-card-image-tweet
+Section: misc
+Priority: extra
+Maintainer: Jaime Pulido Fentanes <pulidofentanes@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-actionlib, ros-indigo-catkin, ros-indigo-cv-bridge, ros-indigo-fake-camera-effects, ros-indigo-image-branding, ros-indigo-rospy, ros-indigo-sensor-msgs, ros-indigo-social-card-reader, ros-indigo-std-msgs, ros-indigo-strands-tweets
+Homepage: https://github.com/strands-project/strands_social
+Standards-Version: 3.9.2
+
+Package: ros-indigo-card-image-tweet
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-actionlib, ros-indigo-cv-bridge, ros-indigo-fake-camera-effects, ros-indigo-image-branding, ros-indigo-rospy, ros-indigo-sensor-msgs, ros-indigo-social-card-reader, ros-indigo-std-msgs, ros-indigo-strands-tweets
+Description: The card_image_tweet package
