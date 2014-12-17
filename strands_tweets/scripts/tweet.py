@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 
-from strands_tweets.srv import *
+
 import rospy
 
 from PIL import Image
 from twython import Twython, TwythonError
 import actionlib
+from strands_tweets.srv import *
 import strands_tweets.msg
-#from sensor_msgs.msg import Image
+import sensor_msgs.msg #import Image
 import cv2
 from cv_bridge import CvBridge, CvBridgeError
 
@@ -23,6 +24,7 @@ class tweetsServer(object):
         OAUTH_TOKEN_SECRET = rospy.get_param("/twitter/oauthTokenSecret")
         self._twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
         self._tweet_srv = rospy.Service("/strands_tweets/Tweet",Tweet,self._tweet_srv_cb)
+        self.tw_pub = rospy.Publisher('/strands_tweets/tweet', strands_tweets.msg.Tweeted)
 
         self.cancelled = False
         self._action_name = name
@@ -107,6 +109,15 @@ class tweetsServer(object):
                 cv2.imwrite('/tmp/temp_tweet.png', photo)
                 photo2 = open('/tmp/temp_tweet.png', 'rb')
                 self._twitter.update_status_with_media(status=goal.text, media=photo2)
+                
+                                
+                tweettext = strands_tweets.msg.Tweeted()
+                tweettext.text = goal.text
+                tweettext.photo = goal.photo
+                #tweettext.depth = depth
+
+                self.tw_pub.publish(tweettext)
+
                 result=True
             except TwythonError as e:
                 print e

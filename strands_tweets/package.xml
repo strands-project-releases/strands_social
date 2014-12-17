@@ -1,13 +1,17 @@
 <?xml version="1.0"?>
 <package>
   <name>strands_tweets</name>
-  <version>0.0.6</version>
+  <version>0.0.10</version>
   <description>The strands_tweets package</description>
 
-  <maintainer email="jaime@todo.todo">jaime</maintainer>
+  <maintainer email="pulidofentanes@gmail.com">Jaime Pulido Fentanes</maintainer>
 
-  <license>GPL</license>
+  <license>MIT</license>
 
+  <url type="website">https://github.com/strands-project/strands_social</url>
+
+
+  <author email="pulidofentanes@gmail.com">Jaime Pulido Fentanes</author>
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>

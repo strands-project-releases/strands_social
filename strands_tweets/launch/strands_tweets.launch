@@ -1,0 +1,16 @@
+<launch>
+
+  <arg name="machine" default="localhost" />
+  <arg name="user" default="" />
+
+
+  <machine name="$(arg machine)" address="$(arg machine)" env-loader="$(optenv ROS_ENV_LOADER )" user="$(arg user)" default="true"/>
+
+  <!-- Node which does all the tweeting -->
+  <node name="strands_tweets" pkg="strands_tweets" type="tweet.py" output="screen"/>
+
+  <!-- Node which grabs an image from a given topic before calling the above node -->
+  <node name="image_tweeter_node" pkg="strands_tweets" type="image_tweeter_node.py" output="screen"/>
+
+
+</launch>

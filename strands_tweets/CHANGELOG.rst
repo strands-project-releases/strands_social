@@ -2,6 +2,26 @@
 Changelog for package strands_tweets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.10 (2014-11-21)
+-------------------
+
+0.0.9 (2014-11-21)
+------------------
+* fixing typo
+* adding log tweets
+* bug fix
+* Merge pull request `#33 <https://github.com/strands-project/strands_social/issues/33>`_ from Jailander/hydro-devel
+  publish topic with text image and depth everytime a tweet is made
+* changing message name
+* publish topic with text image and depth everytime a tweet is made
+* Contributors: Jaime Pulido Fentanes
+
+0.0.7 (2014-11-20)
+------------------
+* Fixing description in package.xml
+* making brand image a parameter and fixing package.xml in strands_tweets
+* Contributors: Jaime Pulido Fentanes
+
 0.0.6 (2014-11-06)
 ------------------
 
