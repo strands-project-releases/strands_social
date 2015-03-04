@@ -4,9 +4,11 @@
 #include "CTransformation.h"
 #include <image_transport/image_transport.h>
 #include <std_msgs/String.h>
+#include <geometry_msgs/PoseStamped.h>
 
 image_transport::Publisher imdebug;
 ros::Publisher command_pub;
+ros::Publisher pose_pub;
 
 CCircleDetect *detector;
 CTransformation *photoTf;
@@ -26,11 +28,11 @@ int numCommands = 5;
 int lastCommand = -1;
 int command = -1;
 float angle = 0;
-float  distanceTolerance = 0.1;
+float  distanceTolerance = 0.2;
 
 const char *commandName[] = {
-	"PHOTO",
-	"DOCK",
+	"INFO_TERMINAL",
+	"PAUSE_WALK",
 	"COLLECT",
 	"PATROL",
 	"WAIT",
@@ -71,8 +73,13 @@ void grayImageCallback(const sensor_msgs::ImageConstPtr& msg)
 			
 		int ptr = depthImage->bpp*(((int)currentSegment.y)*depthImage->width+(int)currentSegment.x);
 		float distance = 0.001*(depthImage->data[ptr]+depthImage->data[ptr+1]*255);
-		//printf("Circle detected at %.2f %.2f %.3f %.3f error %.3f - action %s %f %i!\n",currentSegment.x,currentSegment.y,o.x,distance,fabs(1-distance/o.x),commandName[command],angle,circleDetections);
+		geometry_msgs::PoseStamped pose;
+		pose.pose.position.x = -o.y;
+		pose.pose.position.y = -o.z;
+		pose.pose.position.z = o.x;
+		printf("Circle detected at %.2f %.2f %.3f %.3f error %.3f - action %s %f %i!\n",-o.y,-o.z,o.x,distance,fabs(1-distance/o.x),commandName[command],angle,circleDetections);
 		if (fabs(1-distance/o.x)<distanceTolerance){
+			pose_pub.publish(pose);	
 			if (command == lastCommand) circleDetections++; else circleDetections = 0;
 			lastCommand = command;
 		}else{
@@ -108,7 +115,7 @@ void depthImageCallback(const sensor_msgs::ImageConstPtr& msg)
 
 int main(int argc, char** argv)
 {
-	ros::init(argc, argv, "social_card_reader");
+	ros::init(argc, argv, "social_card_reader2");
 	ros::NodeHandle n;
 	image_transport::ImageTransport it(n);
 	grayImage = new CRawImage(defaultImageWidth,defaultImageHeight,4);
@@ -119,6 +126,7 @@ int main(int argc, char** argv)
 	image_transport::Subscriber subimGray = it.subscribe("/head_xtion/rgb/image_mono", 1, grayImageCallback);
 	image_transport::Subscriber subimDepth = it.subscribe("/head_xtion/depth/image_raw", 1, depthImageCallback);
 	command_pub = n.advertise<std_msgs::String>("/socialCardReader/commands", 1);
+	pose_pub = n.advertise<geometry_msgs::PoseStamped>("/socialCardReader/cardposition", 1);
 	
 	while (ros::ok()){
 		ros::spinOnce();
