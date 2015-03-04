@@ -1,0 +1,7 @@
+string text
+bool force
+string topic
+---
+bool success
+---
+
