@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>social_card_reader</name>
-  <version>0.0.10</version>
+  <version>0.0.11</version>
   <description>Can read a limited amount of commands from cards presented to its camera </description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
@@ -42,10 +42,12 @@
   <build_depend>image_transport</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
 
   <run_depend>image_transport</run_depend>
   <run_depend>roscpp</run_depend>
   <run_depend>std_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
