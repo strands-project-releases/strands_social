@@ -2,6 +2,9 @@
 Changelog for package card_image_tweet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.11 (2015-03-04)
+-------------------
+
 0.0.10 (2014-11-21)
 -------------------
 * including support dir in install targets
