@@ -77,7 +77,7 @@ void grayImageCallback(const sensor_msgs::ImageConstPtr& msg)
 		pose.pose.position.x = -o.y;
 		pose.pose.position.y = -o.z;
 		pose.pose.position.z = o.x;
-		printf("Circle detected at %.2f %.2f %.3f %.3f error %.3f - action %s %f %i!\n",-o.y,-o.z,o.x,distance,fabs(1-distance/o.x),commandName[command],angle,circleDetections);
+		ROS_DEBUG("Circle detected at %.2f %.2f %.3f %.3f error %.3f - action %s %f %i!\n",-o.y,-o.z,o.x,distance,fabs(1-distance/o.x),commandName[command],angle,circleDetections);
 		if (fabs(1-distance/o.x)<distanceTolerance){
 			pose_pub.publish(pose);	
 			if (command == lastCommand) circleDetections++; else circleDetections = 0;
