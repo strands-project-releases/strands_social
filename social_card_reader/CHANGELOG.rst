@@ -2,6 +2,11 @@
 Changelog for package social_card_reader
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.12 (2015-03-24)
+-------------------
+* Moving incredibly spammy output to debug level instead of printf.
+* Contributors: Christian Dondrup
+
 0.0.11 (2015-03-04)
 -------------------
 * Merge pull request `#40 <https://github.com/strands-project/strands_social/issues/40>`_ from hawesie/hydro-devel
