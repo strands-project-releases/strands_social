@@ -1,0 +1,12 @@
+Source: ros-indigo-strands-social
+Section: misc
+Priority: extra
+Maintainer: Christian Dondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://github.com/strands-project/strands_social
+Standards-Version: 3.9.2
+
+Package: ros-indigo-strands-social
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-datamatrix-read, ros-indigo-fake-camera-effects, ros-indigo-image-branding, ros-indigo-social-card-reader, ros-indigo-strands-tweets
+Description: The strands_social metapackage
