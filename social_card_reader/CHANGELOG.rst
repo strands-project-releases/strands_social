@@ -2,6 +2,9 @@
 Changelog for package social_card_reader
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.13 (2015-04-13)
+-------------------
+
 0.0.12 (2015-03-24)
 -------------------
 * Moving incredibly spammy output to debug level instead of printf.
