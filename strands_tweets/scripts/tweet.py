@@ -105,19 +105,18 @@ class tweetsServer(object):
             try:
                 bridge = CvBridge()
                 photo = bridge.imgmsg_to_cv2(goal.photo, "bgr8")
+
+                tweettext = strands_tweets.msg.Tweeted()
+                tweettext.text = goal.text
+                tweettext.photo = goal.photo
+                #tweettext.depth = depth
+                self.tw_pub.publish(tweettext)
+
                 ### I MUST CHANGE THIS AS SOON AS POSSIBLE ###
                 cv2.imwrite('/tmp/temp_tweet.png', photo)
                 photo2 = open('/tmp/temp_tweet.png', 'rb')
                 self._twitter.update_status_with_media(status=goal.text, media=photo2)
                 
-                                
-                tweettext = strands_tweets.msg.Tweeted()
-                tweettext.text = goal.text
-                tweettext.photo = goal.photo
-                #tweettext.depth = depth
-
-                self.tw_pub.publish(tweettext)
-
                 result=True
             except TwythonError as e:
                 print e
