@@ -73,14 +73,10 @@ class read_and_tweet(object):
 
             self.client.send_goal(tweetgoal)
 
-            #tweettext=card_image_tweet.msg.Tweet()
-            #tweettext.text = text
-            #tweettext.photo = br_ph.branded_image
-            #self.tw_pub.publish(tweettext)
-    
-            self.client.wait_for_result()
-            ps = self.client.get_result()
-            print ps
+   
+            #self.client.wait_for_result()
+            #ps = self.client.get_result()
+            #print ps
             sleep(10)   
             self.msg_sub = rospy.Subscriber('/socialCardReader/commands', String, self.command_callback, queue_size=1)
     
