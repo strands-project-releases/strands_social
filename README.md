@@ -1,3 +1,31 @@
+## strands_social (indigo) - 0.0.14-0
+
+The packages in the `strands_social` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --non-interactive -t indigo -r indigo strands_social` on `Wed, 13 May 2015 15:30:40 -0000`
+
+These packages were released:
+- `card_image_tweet`
+- `datamatrix_read`
+- `fake_camera_effects`
+- `image_branding`
+- `social_card_reader`
+- `strands_social`
+- `strands_tweets`
+
+Version of package(s) in repository `strands_social`:
+- upstream repository: https://github.com/strands-project/strands_social.git
+- release repository: https://github.com/strands-project-releases/strands_social.git
+- rosdistro version: `0.0.13-0`
+- old version: `0.0.13-0`
+- new version: `0.0.14-0`
+
+Versions of tools used:
+- bloom version: `0.5.12`
+- catkin_pkg version: `0.2.4`
+- rosdep version: `0.10.30`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## strands_social (indigo) - 0.0.13-0
 
 The packages in the `strands_social` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --non-interactive -t indigo -r indigo strands_social` on `Mon, 13 Apr 2015 17:32:55 -0000`
