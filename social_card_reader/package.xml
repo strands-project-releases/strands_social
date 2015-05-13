@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>social_card_reader</name>
-  <version>0.0.13</version>
+  <version>0.0.14</version>
   <description>Can read a limited amount of commands from cards presented to its camera </description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
