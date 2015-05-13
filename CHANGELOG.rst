@@ -2,6 +2,9 @@
 Changelog for package strands_tweets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.14 (2015-05-13)
+-------------------
+
 0.0.13 (2015-04-13)
 -------------------
 * changing order of tweeting publishing trying to tackle slow network problems
