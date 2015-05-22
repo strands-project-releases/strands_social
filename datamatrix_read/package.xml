@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>datamatrix_read</name>
-  <version>0.0.14</version>
+  <version>0.0.15</version>
   <description>The datamatrix_read package</description>
 
   <maintainer email="pulidofentanes@gmail.com">Jaime Pulido Fentanes</maintainer>
