@@ -1,0 +1,113 @@
+ros-indigo-social-card-reader (0.0.15-0trusty) trusty; urgency=high
+
+
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Fri, 22 May 2015 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.14-0trusty) trusty; urgency=high
+
+
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Wed, 13 May 2015 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.13-0trusty) trusty; urgency=high
+
+
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Mon, 13 Apr 2015 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.12-0trusty) trusty; urgency=high
+
+  * Moving incredibly spammy output to debug level instead of printf.
+  * Contributors: Christian Dondrup
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Tue, 24 Mar 2015 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.11-0trusty) trusty; urgency=high
+
+  * Merge pull request #40 <https://github.com/strands-project/strands_social/issues/40> from hawesie/hydro-devel
+    Adding necessary linking for OS X
+  * Adding necessary linking for OS X
+  * Sensitivity increase
+  * Minor changes to social card reader.
+  * Card reader now publishes card position.
+  * Contributors: Jaime Pulido Fentanes, Marc Hanheide, Nick Hawes, STRANDS, Tom Krajnik
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Wed, 04 Mar 2015 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.10-0trusty) trusty; urgency=high
+
+
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.9-0trusty) trusty; urgency=high
+
+
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.7-0trusty) trusty; urgency=high
+
+
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Thu, 20 Nov 2014 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.6-0trusty) trusty; urgency=high
+
+
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Thu, 06 Nov 2014 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.5-0trusty) trusty; urgency=high
+
+  * Install targets added and redundant dependencies removed.
+  * CDump removed to resolve dependency on NCURSES.
+  * Brief README + card improvement
+  * Distance verification to remove outliers.
+  * Improved cards.
+  * Addded classes to calculate position of the pattern in space.
+  * Added cards.
+  * Circle detector social card reader.
+  * Circle detector social card reader.
+  * Circle detector to read command cards.
+  * Contributors: Tom Krajnik, strands
+  * Install targets added and redundant dependencies removed.
+  * CDump removed to resolve dependency on NCURSES.
+  * Brief README + card improvement
+  * Distance verification to remove outliers.
+  * Improved cards.
+  * Addded classes to calculate position of the pattern in space.
+  * Added cards.
+  * Circle detector social card reader.
+  * Circle detector social card reader.
+  * Circle detector to read command cards.
+  * Contributors: Tom Krajnik, strands
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Wed, 05 Nov 2014 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.4-0trusty) trusty; urgency=high
+
+
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.3-0trusty) trusty; urgency=high
+
+
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-social-card-reader (0.0.2-0trusty) trusty; urgency=high
+
+
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Tue, 28 Oct 2014 16:18:00 -0000
+
+ros-indigo-social-card-reader (0.0.1-0trusty) trusty; urgency=high
+
+
+
+ -- Tom Krajnik <tkrajnik@lincoln.ac.uk>  Tue, 28 Oct 2014 15:48:00 -0000
+
+
