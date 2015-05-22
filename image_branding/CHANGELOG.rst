@@ -2,6 +2,9 @@
 Changelog for package image_branding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.15 (2015-05-22)
+-------------------
+
 0.0.14 (2015-05-13)
 -------------------
 * Adding current task to the image
