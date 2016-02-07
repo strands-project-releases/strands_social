@@ -75,7 +75,7 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
  install(PROGRAMS
-   scripts/image_branding_server.py scripts/test_branding.py
+   scripts/image_branding_server.py scripts/test_branding.py scripts/image_superimposer.py scripts/load_image_in_db.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
