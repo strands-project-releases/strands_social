@@ -13,7 +13,8 @@
 #define COLOR_PRECISION 32
 #define COLOR_STEP 8
 
-typedef struct{
+typedef struct
+{
 	float x;
 	float y;
 	float angle,horizontal;
@@ -38,6 +39,7 @@ class CCircleDetect
 		int adjustDimensions(int wi,int he);
 		SSegment findSegment(CRawImage* image, SSegment init);
 		bool examineSegment(CRawImage* image,SSegment *segmen,int ii,float areaRatio);
+		void reconfigure(float ict,float fct,float art,float cdtr,float cdta);
 
 		bool changeThreshold();
 		bool debug,draw,drawAll;
