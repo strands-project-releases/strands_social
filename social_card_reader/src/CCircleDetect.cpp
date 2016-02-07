@@ -48,6 +48,15 @@ CCircleDetect::CCircleDetect(int wi,int he)
 	sizer = sizerAll = 0;
 }
 
+void CCircleDetect::reconfigure(float ict,float fct,float art,float cdtr,float cdta)
+{
+	circularTolerance = ict/100.0;
+	circularityTolerance = fct/100.0;
+	ratioTolerance = 1+art/100.0;
+	centerDistanceToleranceRatio = cdtr/100.0;
+	centerDistanceToleranceAbs = cdta;
+}
+
 int CCircleDetect::adjustDimensions(int wi,int he)
 {
 	width = wi;
