@@ -1,0 +1,12 @@
+Source: ros-kinetic-datamatrix-read
+Section: misc
+Priority: extra
+Maintainer: Jaime Pulido Fentanes <pulidofentanes@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libdmtx-dev, ros-kinetic-catkin, ros-kinetic-cv-bridge, ros-kinetic-image-transport, ros-kinetic-roscpp, ros-kinetic-std-msgs
+Homepage: https://github.com/strands-project/strands_social
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-datamatrix-read
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libdmtx-dev, ros-kinetic-cv-bridge, ros-kinetic-image-transport, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs
+Description: The datamatrix_read package
