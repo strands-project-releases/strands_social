@@ -1,3 +1,33 @@
+## strands_social (kinetic) - 0.0.16-0
+
+The packages in the `strands_social` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -n -t kinetic -r kinetic strands_social` on `Tue, 04 Sep 2018 16:23:37 -0000`
+
+These packages were released:
+- `card_image_tweet`
+- `datamatrix_read`
+- `fake_camera_effects`
+- `image_branding`
+- `social_card_reader`
+- `strands_social`
+- `strands_tweets`
+
+Version of package(s) in repository `strands_social`:
+
+- upstream repository: https://github.com/strands-project/strands_social.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.0.16-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.2`
+- catkin_pkg version: `0.4.1`
+- rosdep version: `0.12.1`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## strands_social (indigo) - 0.0.16-0
 
 The packages in the `strands_social` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --non-interactive -t indigo -r indigo strands_social` on `Sun, 07 Feb 2016 16:12:49 -0000`
