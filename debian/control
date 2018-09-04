@@ -1,0 +1,12 @@
+Source: ros-kinetic-card-image-tweet
+Section: misc
+Priority: extra
+Maintainer: Jaime Pulido Fentanes <pulidofentanes@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-actionlib, ros-kinetic-catkin, ros-kinetic-cv-bridge, ros-kinetic-fake-camera-effects, ros-kinetic-image-branding, ros-kinetic-rospy, ros-kinetic-sensor-msgs, ros-kinetic-social-card-reader, ros-kinetic-std-msgs, ros-kinetic-strands-tweets
+Homepage: https://github.com/strands-project/strands_social
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-card-image-tweet
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-actionlib, ros-kinetic-cv-bridge, ros-kinetic-fake-camera-effects, ros-kinetic-image-branding, ros-kinetic-rospy, ros-kinetic-sensor-msgs, ros-kinetic-social-card-reader, ros-kinetic-std-msgs, ros-kinetic-strands-tweets
+Description: The card_image_tweet package
