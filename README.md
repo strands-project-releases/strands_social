@@ -1,3 +1,32 @@
+## strands_social (kinetic) - 0.1.0-0
+
+The packages in the `strands_social` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -y --no-web -t kinetic -r kinetic strands_social` on `Wed, 05 Sep 2018 14:33:33 -0000`
+
+These packages were released:
+- `card_image_tweet`
+- `fake_camera_effects`
+- `image_branding`
+- `social_card_reader`
+- `strands_social`
+- `strands_tweets`
+
+Version of package(s) in repository `strands_social`:
+
+- upstream repository: https://github.com/strands-project/strands_social.git
+- release repository: https://github.com/strands-project-releases/strands_social.git
+- rosdistro version: `0.0.16-0`
+- old version: `0.0.16-0`
+- new version: `0.1.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.6`
+- catkin_pkg version: `0.4.8`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.9`
+- vcstools version: `0.1.40`
+
+
 ## strands_social (kinetic) - 0.0.16-0
 
 The packages in the `strands_social` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -n -t kinetic -r kinetic strands_social` on `Tue, 04 Sep 2018 16:23:37 -0000`
