@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>strands_social</name>
-  <version>0.0.16</version>
+  <version>0.1.0</version>
   <description>The strands_social metapackage</description>
 
   <maintainer email="cdondrup@lincoln.ac.uk">Christian Dondrup</maintainer>
@@ -13,7 +13,6 @@
   <author email="cdondrup@lincoln.ac.uk">Christian Dondrup</author> 
 
   <buildtool_depend>catkin</buildtool_depend>
-  <run_depend>datamatrix_read</run_depend>
   <run_depend>fake_camera_effects</run_depend>
   <run_depend>image_branding</run_depend>
   <run_depend>social_card_reader</run_depend>
